@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CryptoAlert</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_virtual_portfolio">Virtual Portfolio</string>
+    <string name="nav_tracking">Tracked Coins and Exchanges</string>
+    <string name="button_delete_tracking_entry">Delete</string>
+    <string name="azure_db_username">CryptoAlertApp</string>
+    <string name="azure_db_password">CryptoAlert18</string>
 </resources>
