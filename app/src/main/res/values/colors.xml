@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#40c3ff</color>
+    <color name="positive">#3fdf3f</color>
+    <color name="negative">#ef3838</color>
+    <color name="neutral">#000000</color>
+    <color name="progressBar">#fc8600</color>
+    <color name="chartData">#06aac6</color>
+    <color name="chartBackground">#f0f0f0</color>
+    <color name="chartText">#202020</color>
 </resources>

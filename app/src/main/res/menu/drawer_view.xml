@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_coin_price_overview"
+            android:title="@string/nav_coin_price_overview" />
+        <item
+            android:id="@+id/nav_tracking_editor"
+            android:title="@string/nav_tracking" />
+    </group>
+</menu>
