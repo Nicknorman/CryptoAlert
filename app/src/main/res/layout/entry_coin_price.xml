@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_marginTop="10dp">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/relativeLayout">
+
+        <TextView
+                android:id="@+id/coin_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="CoinName"
+                tools:layout_editor_absoluteY="15dp" tools:layout_editor_absoluteX="62dp"
+                android:layout_alignParentTop="true" android:layout_toEndOf="@+id/coin_image_image_view"/>
+        <ImageView
+                android:id="@+id/coin_image_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_default_coin_image"/>
+
+        <TextView
+                android:id="@+id/coin_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$Price"
+                android:layout_below="@+id/coin_name_text_view"
+                android:layout_toEndOf="@+id/coin_image_image_view"/>
+
+        <TextView
+                android:id="@+id/coin_change_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+100%"
+                android:textColor="@color/positive"
+                android:layout_below="@+id/coin_name_text_view"
+                android:layout_toEndOf="@+id/coin_image_image_view"
+                android:layout_marginStart="80dp" android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/coin_price_chart"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relativeLayout" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_width="0dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
